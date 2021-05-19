@@ -1,3 +1,6 @@
+package mainGUI;
+
+
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JFrame;
@@ -7,6 +10,7 @@ import javax.swing.JFrame;
  * @author User
  */
 public class ScreenSize {
+
     private static int screenWidth;
     private static int screenHeight;
 
@@ -32,6 +36,5 @@ public class ScreenSize {
         this.screenWidth = screenSize.width;
         this.screenHeight = screenSize.height;
     }
-    
-    
+
 }

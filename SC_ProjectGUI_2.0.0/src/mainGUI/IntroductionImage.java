@@ -3,6 +3,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+import mainGUI.ScreenSize;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
