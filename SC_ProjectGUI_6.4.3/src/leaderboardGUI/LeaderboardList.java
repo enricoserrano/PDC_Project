@@ -18,29 +18,34 @@ import java.util.Set;
  */
 public class LeaderboardList {
 
-    private ArrayList<String> nameList = new ArrayList<String>();
-    private ArrayList<Integer> scoreList = new ArrayList<Integer>();
-    private ArrayList<Integer> moneyEachQuestion = new ArrayList<>(Arrays.asList(100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 12500, 250000, 500000, 1000000));
+    private static ArrayList<String> nameList = new ArrayList<String>();
+    private static ArrayList<Integer> scoreList = new ArrayList<Integer>();
+    private static ArrayList<Integer> moneyEachQuestion = new ArrayList<>(Arrays.asList(100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 12500, 250000, 500000, 1000000));
 
-    public ArrayList<Integer> getMoneyEachQuestion() {
-        return moneyEachQuestion;
-    }
-
-    public ArrayList<String> getNameList() {
+    public static ArrayList<String> getNameList() {
         return nameList;
     }
 
-    public void setNameList(String name) {
-        this.nameList.add(name);
+    public static void setNameList(ArrayList<String> nameList) {
+        LeaderboardList.nameList = nameList;
     }
 
-    public ArrayList<Integer> getScoreList() {
+    public static ArrayList<Integer> getScoreList() {
         return scoreList;
     }
 
-    public void setScoreList(int score) {
-        this.scoreList.add(score);
+    public static void setScoreList(ArrayList<Integer> scoreList) {
+        LeaderboardList.scoreList = scoreList;
     }
+
+    public static ArrayList<Integer> getMoneyEachQuestion() {
+        return moneyEachQuestion;
+    }
+
+    public static void setMoneyEachQuestion(ArrayList<Integer> moneyEachQuestion) {
+        LeaderboardList.moneyEachQuestion = moneyEachQuestion;
+    }
+
 
     public LeaderboardList() {
         leaderboardSetup();
