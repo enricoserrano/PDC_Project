@@ -85,7 +85,14 @@ public class StartScreen extends JPanel {
         });
         exitGame.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                System.exit(0);
+
+                int confirmation = JOptionPane.showConfirmDialog(null, "Do you wish to exit the game?", "Confirm", JOptionPane.YES_NO_OPTION);
+
+                if (confirmation == JOptionPane.YES_OPTION) {
+                    System.exit(0);
+                } else {
+                    
+                }
             }
         });
     }
